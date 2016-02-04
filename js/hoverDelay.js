@@ -10,7 +10,7 @@
 				$.noop();
 			}
 		};
-		var sets = $.entend(defaults,options || {});
+		var sets = $.extend(defaults,options || {});
 		var hoverTimer,outTimer;
 		return $(this).each(function(){
 			$(this).hover(function(){
